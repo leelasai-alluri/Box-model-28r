@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Centering</title>
+    <style>
+        .parent {
+            margin: 100px;
+            height: 500px;
+            width: 100px; /* Fixed height */
+            background-color: hsl(253, 70%, 50%);
+            text-align: center;
+            color: white;
+            /*display: flex; /* Enables flexbox layout */
+            /*flex-direction: column; /* Ensures vertical alignment */
+        }
+        .child {
+            
+            margin: 100%; /* Auto margins for top and bottom */
+            width: 300px;
+            height: 200px;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            /*margin-top: 100px;
+             /* Centers text inside the block */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">parent
+        <div class="child">Child</div>
+    </div>
+</body>
+</html>
